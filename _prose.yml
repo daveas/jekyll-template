@@ -1,0 +1,30 @@
+# Prose Settings
+prose:
+  siteurl: '' # same as site.basurl
+  media: '/assets'
+  ignore:
+    - '.DS_Store'
+    - '.gitignore'
+    - '*.html'
+    - '*.xml'
+    - 'Gemfile'
+    - 'Gemfile.lock'
+    - 'CNAME'
+    - '404.md'
+    - 'README.md'
+    - '_config.yml'
+    - '/_layouts'
+    - '/_sass'
+    - '/_site'
+    - '/css'
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+    _posts/static:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
