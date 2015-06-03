@@ -1,0 +1,46 @@
+@mixin center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@mixin meta {
+  color: $gray-color;
+  font-size: $small-size;
+  ul {
+    list-style-type: none;
+    li {
+      display: block;
+    }
+  }
+}
+
+.collapse{
+   display:inline-block;
+ }
+ .collapse + input{
+   display:none;
+ }
+ .collapse + input + *{
+   display:none;
+ }
+ .collapse+ input:checked + *{
+   display:inline-block;
+ }
+
+ .inline-list {
+   ul {
+     margin: 0;
+     padding: 0;
+     list-style-type: none;
+     li {
+       display: inline;
+     }
+   }
+ }
+
+ hr {
+   width: 25%;
+   margin: 0 auto;
+   margin-bottom: $spacing-unit*1.2;
+   margin-top: $spacing-unit;
+ }
