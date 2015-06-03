@@ -1,14 +1,14 @@
 # Site settings
-title: Title
-author: Name # if there is only one author on this site, otherwise delete line
+title: Jekyll Template
+author: Name # of sole author or company
 email: email@domain.com
-description: Description
-url: "http://yourdomain.com"
+description: A Jekyll Template created by Seemingly Creative
+url: 'http://template.daveas.github.io'
 icon: /assets/images/icon.png
-twitter: replace
-facebook: replace
+social_name: replace
 google_analytics: replace
 disqus: replace
+credits: Seemingly Creative
 
 
 # Build settings
