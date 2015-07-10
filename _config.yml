@@ -1,15 +1,15 @@
 # Site settings
 title: Jekyll Template
-author: Name # of sole author or company
+author: Name
+company: Name
 email: email@domain.com
-description: A Jekyll Template created by Seemingly Creative
+description: A Jekyll Template created by @daveaseeman
 # url: 'http://daveaseeman.com/jekyll-template'
 icon: /assets/images/icon.png
-social_name: replace
+social_name: replace # replace with handle
 analytics: replace
 disqus: replace
 credits: Seemingly Creative
-
 
 # Build settings
 markdown: kramdown
