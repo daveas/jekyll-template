@@ -1,0 +1,11 @@
+- name: Christopher Columbus
+  photo: https://upload.wikimedia.org/wikipedia/commons/c/c2/Portrait_of_a_Man,_Said_to_be_Christopher_Columbus.jpg
+  job: Discovering America
+
+- name: Marco Polo
+  photo: https://upload.wikimedia.org/wikipedia/commons/3/3d/Marco_Polo_-_costume_tartare.jpg
+  job: Journeying to Asia
+
+- name: Ferdinand Magellan
+  photo: https://upload.wikimedia.org/wikipedia/commons/0/05/Hernando_de_Magallanes_del_museo_Madrid.jpg
+  job: Circumnavigating the Earth
