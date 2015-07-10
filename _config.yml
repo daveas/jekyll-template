@@ -6,7 +6,7 @@ description: A Jekyll Template created by Seemingly Creative
 # url: 'http://daveaseeman.com/jekyll-template'
 icon: /assets/images/icon.png
 social_name: replace
-google_analytics: replace
+analytics: replace
 disqus: replace
 credits: Seemingly Creative
 
