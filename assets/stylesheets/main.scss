@@ -6,11 +6,12 @@
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css)
 
 // Typography
-$head-font-family:  'Merriweather Sans', sans-serif;
+$head-font-family:  'Merriweather Sans', Helvetica, sans-serif;
 $head-font-weight:  800;
-$body-font-family:  'Merriweather', serif;
+$body-font-family:  'Merriweather', Georgia, serif;
 $body-font-weight:  400;
-$line-height:  1.4;
+$body-font-siz:     1.5em;
+$line-height:       1.6;
 
 // Colors
 $text-color:   #2a2a2a;
