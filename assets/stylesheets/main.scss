@@ -30,7 +30,7 @@ $bp-desktop-hd: 1200px;
 
 // Mixins
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
+    @media only screen and (min-width: $device), only screen and (min-device-width: $device) {
         @content;
     }
 }
