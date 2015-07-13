@@ -8,10 +8,11 @@
           box-sizing: border-box;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -21,10 +22,19 @@ html {
 }
 
 body {
-    font-family: $body-font-family;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+  color: $text-color;
+  font-family: $body-font-family;
+  font-size: $body-size;
+  line-height: $line-height;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
 }
 
 // =========================
@@ -75,6 +85,10 @@ a {
   background-color: transparent; //Remove the gray background color from active links in IE 10.
   text-decoration: none;
   
+  &:visited {
+    color: $gray-color;
+  }
+
   a:active,
   a:hover {
   outline: 0; // Improve readability of focused elements when they are also in an active/hover state.
@@ -136,6 +150,7 @@ sub {
 img {
   display: block;
   max-width: 100%;
+  vertical-align: middle;
   border: 0; // Remove border when inside `a` element in IE 8/9/10.
 }
 
@@ -151,6 +166,10 @@ figure {
   margin: 1em 40px; // Address margin not present in IE 8/9 and Safari.
 }
 
+figcaption {
+ font-size: 80%;
+}
+
 // Address differences between Firefox and other browsers.
 hr { 
   -moz-box-sizing: content-box;
@@ -160,6 +179,11 @@ hr {
 
 pre {
   overflow: auto; // Contain overflow in all browsers.
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 code,
@@ -168,7 +192,27 @@ pre,
 samp {
   font-family: monospace, monospace;
   font-size: 1em; // Address odd `em`-unit font size rendering in all browsers.
+  background-color: $soft-color;
+  border: 1px solid $soft-color;
+  border-radius: 3px;
 }
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  color: $soft-color;
+  border-left: 3px solid $soft-color;
+  padding-left: $spacing-unit / 2;
+  font-size: 85%;
+  letter-spacing: -1px;
+  font-style: italic;
+
+  > :last-child {
+      margin-bottom: 0;
+  }
+}
+
 
 // =====
 // Forms
@@ -286,210 +330,68 @@ tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
 
+//=====
+// Grid
+//=====
 
-
-/**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
+ .container {
+  position: relative;
+  width: 100%;
+  max-width: $content-width
+  margin: 0 auto;
+  padding: 0 $spacing-unit;
+  @extend %clearfix;
 }
 
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
 
-
-/**
- * Basic styling
- */
-body {
-    font-family: $body-font;
-    font-size: $body-size;
-    line-height: $line-height;
-    font-weight: 300;
-    color: $text-color;
-    background-color: $back-color;
-    -webkit-text-size-adjust: 100%;
+@include media-query$bp-mobile) {
+  .container {
+    width: 85%;
+    padding: 0; }
 }
 
+@include media-query$bp-phablet) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
 
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 13.3333333333%; }
+  .three.columns                  { width: 22%;            }
+  .four.columns                   { width: 30.6666666667%; }
+  .five.columns                   { width: 39.3333333333%; }
+  .six.columns                    { width: 48%;            }
+  .seven.columns                  { width: 56.6666666667%; }
+  .eight.columns                  { width: 65.3333333333%; }
+  .nine.columns                   { width: 74.0%;          }
+  .ten.columns                    { width: 82.6666666667%; }
+  .eleven.columns                 { width: 91.3333333333%; }
+  .twelve.columns                 { width: 100%; margin-left: 0; }
 
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
-}
+  .one-third.column               { width: 30.6666666667%; }
+  .two-thirds.column              { width: 65.3333333333%; }
 
+  .one-half.column                { width: 48%; }
 
+//==========
+// Utilities
+//==========
 
-/**
- * Images
- */
-img {
-    max-width: 100%;
-    vertical-align: middle;
-}
-
-
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-size;
-}
-
-
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
-}
-
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
-}
-
-
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-  font-family: $head-font;
-  font-weight: $head-weight;
-}
-
-
-
-/**
- * Links
- */
-a {
-    color: $link-color;
-    text-decoration: none;
-
-    &:visited {
-        color: $gray-color;
-    }
-
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
-}
-
-
-
-/**
- * Blockquotes
- */
-blockquote {
-    color: $gray-color;
-    border-left: 4px solid $gray-color;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
-
-    > :last-child {
-        margin-bottom: 0;
-    }
-}
-
-
-
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $gray-color;
-    border-radius: 3px;
-    background-color: $back-color;
-}
-
-code {
-    padding: 1px 5px;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
-
-
-/**
- * Wrapper
- */
-.wrapper {
-    max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
-    max-width:         calc(800px - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(800px - (#{$spacing-unit}));
-        max-width:         calc(800px - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
-
-
-
-/**
- * Clearfix
- */
 %clearfix {
-
     &:after {
         content: "";
         display: table;
         clear: both;
-    }
-}
-
-
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $gray-color;
-        }
     }
 }
