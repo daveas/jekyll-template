@@ -1,14 +1,14 @@
 # Site
-title: Jekyll Template
-author: Name
-company: Name
-email: email@domain.com
+title: Rig - A Jekyll Template
+author: Dave
+company: Seemingly Creative
+email: hi@daveaseeman.com
 description: A Versatile Jekyll Template created by @daveaseeman
 url: 'http://rig.daveaseeman.com'
 icon: /assets/images/icon.png
 images: /assets/images/
 docs: /assets/docs/
-handle: replace
+handle: daveaseeman
 analytics: UA-51898808-7
 disqus: replace
 
