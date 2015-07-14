@@ -36,9 +36,30 @@ $bp-desktop-hd: 1200px;
     }
 }
 
-// Imports
+// Basic Imports
 @import "base";
 @import "layout";
 @import "header";
 @import "footer";
 @import "syntax";
+
+// Skeleton Imports
+@import 
+  "_skeleton/styles"; // Required
+  "_skeleton/grid"; // Required
+  "_skeleton/forms"; // Required
+  "_skeleton/buttons"; // Required
+
+// Animation Imports
+@import 
+  "_animate/_properties"; // Required
+//   "_animate/_attention/attention.scss", // or more specifically "_attention/_bounce.scss"
+//   "_animate/_bouncing-entrances/bouncing-entrances.scss",
+//   "_animate/_bouncing-exits/bouncing-exits.scss",
+//   "_animate/_fading-entrances/fading-entrances.scss",
+//   "_animate/_fading-exits/fading-exits.scss",
+//   "_animate/_flippers/flippers.scss",
+//   "_animate/_lightspeed/lightspeed.scss",
+//   "_animate/_rotating-entrances/rotating-entrances.scss",
+//   "_animate/_rotating-exits/rotating-exits.scss",
+//   "_animate/_specials/specials.scss";
