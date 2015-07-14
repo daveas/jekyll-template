@@ -3,7 +3,7 @@
     <ul>
       <!-- Twitter -->
       <li>
-        <a href="https://twitter.com/{{ site.social_name }}">
+        <a href="https://twitter.com/{{ site.handle }}">
           <span class="fa-stack fa-lg">
             <i class="fa fa-circle fa-stack-2x"></i>
             <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -12,7 +12,7 @@
       </li>
       <!-- Instagram -->
       <li>
-        <a href="https://instagram.com/{{ site.social_name }}">
+        <a href="https://instagram.com/{{ site.handle }}">
           <span class="fa-stack fa-lg">
             <i class="fa fa-circle fa-stack-2x"></i>
             <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
@@ -21,7 +21,7 @@
       </li>
       <!-- Linkedin -->
       <li>
-        <a href="https://linkedin.com/in/{{ site.social_name }}">
+        <a href="https://linkedin.com/in/{{ site.handle }}">
           <span class="fa-stack fa-lg">
             <i class="fa fa-circle fa-stack-2x"></i>
             <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -30,7 +30,7 @@
       </li>
       <!-- GitHub -->
       <li>
-        <a href="https://github.com/{{ site.social_name }}">
+        <a href="https://github.com/{{ site.handle }}">
           <span class="fa-stack fa-lg">
             <i class="fa fa-circle fa-stack-2x"></i>
             <i class="fa fa-git fa-stack-1x fa-inverse"></i>
@@ -51,9 +51,9 @@
   <!-- Meta -->
   <div class="footer-meta">
     <ul>
-      <li><i class="fa fa-copyright"></i> 2014-{{ site.time | date: '%Y' }} {{ site.author }}</li>
-      <li>Site Created by <a href="http://github.com/daveas/daveas.github.io">{{ site.credits }}</a></li>
-      <li><a href="mailto:{{site.email}}?Subject=Hi%"><i class="fa fa-envelope"></i> me</a></li>
+      <li><small><i class="fa fa-copyright"></i> 2014-{{ site.time | date: '%Y' }} {{ site.author }}</small></li>
+      <li><small>Site Created by <a href="http://github.com/daveas/daveas.github.io">{{ site.credits }}</a></small></li>
+      <li><small><a href="mailto:{{site.email}}?Subject=Hi%"><i class="fa fa-envelope"></i> me</a></small></li>
     </ul>
   </div>
 </footer>
