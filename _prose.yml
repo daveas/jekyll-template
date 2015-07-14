@@ -16,7 +16,7 @@ prose:
     - '/_layouts'
     - '/_sass'
     - '/_site'
-    - '/css'
+    - '/assets'
   metadata:
     _posts:
       - name: "layout"
