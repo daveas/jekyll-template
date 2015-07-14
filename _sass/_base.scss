@@ -358,3 +358,16 @@ tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: $soft-color;
 }
+
+//===========//
+// Container //
+//===========//
+
+ .container {
+  position: relative;
+  width: 100%;
+  max-width: $content-width
+  margin: 0 auto;
+  padding: 0 $spacing-unit;
+  @extend %clearfix;
+}
