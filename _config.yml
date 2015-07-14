@@ -1,19 +1,24 @@
-# Site settings
+# Site
 title: Jekyll Template
 author: Name
 company: Name
 email: email@domain.com
-description: A Jekyll Template created by @daveaseeman
-# url: 'http://daveaseeman.com/jekyll-template'
+description: A Versatile Jekyll Template created by @daveaseeman
+url: 'http://rig.daveaseeman.com'
 icon: /assets/images/icon.png
-social_name: replace # replace with handle
-analytics: replace
+images: /assets/images/
+docs: /assets/docs/
+handle: replace
+analytics: UA-51898808-7
 disqus: replace
-credits: Seemingly Creative
 
-# Build settings
+# Build
 markdown: kramdown
 permalink: /posts/:title/
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
 exclude:
   - Gemfile
   - Gemfile.lock
