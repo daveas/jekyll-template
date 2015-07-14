@@ -1,11 +1,13 @@
-// Rig v1.0.0 | github.com/daveaseeman/jekyll-rig
-// normalize.css v3.0.3 | github.com/necolas/normalize.css
-// skeleton.css v2.0.4 | github.com/dhg/skeleton
-// MIT License
+//==========================================================//
+// Rig v1.0.0 | github.com/daveaseeman/jekyll-rig           //
+// normalize.css v3.0.3 | github.com/necolas/normalize.css  //
+// skeleton.css v2.0.4 | github.com/dhg/skeleton            //
+// MIT License                                              //
+//==========================================================//
 
-// ======
-// Basics
-// ======
+//========//
+// Basics //
+//========//
 
 * {
   -webkit-box-sizing: border-box;
@@ -444,4 +446,9 @@ hr {
         display: table;
         clear: both;
     }
+}
+
+%center {
+  text-align: center;
+  margin: 0 auto;
 }
