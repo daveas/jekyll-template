@@ -4,9 +4,9 @@
 
 .site-footer {
   font-size: $small-size;
-  @include center;
+  @extend center;
 }
 
 .footer-meta {
-  @include meta;
+  color: $soft-color;
 }
