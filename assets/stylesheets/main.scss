@@ -45,20 +45,20 @@ $bp-desktop-hd: 1200px;
 @import "syntax";
 
 // Skeleton Imports
-@import "_skeleton/styles"; // Required
-@import "_skeleton/grid"; // Required
-@import "_skeleton/forms"; // Required
-@import "_skeleton/buttons"; // Required
+@import "skeleton/styles"; // Required
+@import "skeleton/grid"; // Required
+@import "skeleton/forms"; // Required
+@import "skeleton/buttons"; // Required
 
 // Animation Imports
-@import "_animate/properties"; // Required
-//@import "_animate/_attention/attention.scss", // or more specifically "_attention/_bounce.scss"
-//@import "_animate/_bouncing-entrances/bouncing-entrances.scss",
-//@import "_animate/_bouncing-exits/bouncing-exits.scss",
-//@import "_animate/_fading-entrances/fading-entrances.scss",
-//@import "_animate/_fading-exits/fading-exits.scss",
-//@import "_animate/_flippers/flippers.scss",
-//@import "_animate/_lightspeed/lightspeed.scss",
-//@import "_animate/_rotating-entrances/rotating-entrances.scss",
-//@import "_animate/_rotating-exits/rotating-exits.scss",
-//@import "_animate/_specials/specials.scss";
+@import "animate/properties"; // Required
+//@import "animate/attention/attention.scss", // or more specifically "animate/attention/bounce.scss"
+//@import "animate/bouncing-entrances/bouncing-entrances.scss",
+//@import "animate/bouncing-exits/bouncing-exits.scss",
+//@import "animate/fading-entrances/fading-entrances.scss",
+//@import "animate/fading-exits/fading-exits.scss",
+//@import "animate/flippers/flippers.scss",
+//@import "animate/lightspeed/lightspeed.scss",
+//@import "animate/rotating-entrances/rotating-entrances.scss",
+//@import "animate/rotating-exits/rotating-exits.scss",
+//@import "animate/specials/specials.scss";
