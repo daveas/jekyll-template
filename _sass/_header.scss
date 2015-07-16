@@ -10,7 +10,7 @@
   font-size: $spacing-unit;
   line-height: $spacing-unit*3;
   float: left;
-  // @include plain-link($text-color);
+  @include plain-link($text-color);
   
   img {
     height: 80px;
