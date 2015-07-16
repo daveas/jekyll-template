@@ -132,8 +132,7 @@ hr {
   margin: 0 auto;
 }
 
-@mixin plain-link($link) {
- a {
+@mixin plain-link($link) { // Use only inside of an 'a' tag
   color: $link;
   text-decoration: none;
   &:visited {
@@ -141,7 +140,6 @@ hr {
    text-decoration: none;
   }
  }
-}
 
 .inline-list {
    ul {
