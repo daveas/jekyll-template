@@ -2,7 +2,7 @@
 .columns {
   width: 100%;
   float: left;
-  @extend extend-border-box;
+  @extend %extend-border-box;
 }
 
 @include media-query($bp-mobile) {
