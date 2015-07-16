@@ -6,16 +6,16 @@
   padding: 0 $spacing-unit/2;
 }
 
-// .site-title {
-//   font-size: $spacing-unit;
-//   line-height: $spacing-unit*3;
-//   float: left;
-//   @include plain-link($text-color);
+.site-title {
+  font-size: $spacing-unit;
+  line-height: $spacing-unit*3;
+  float: left;
+  // @include plain-link($text-color);
   
-//   img {
-//     height: 80px;
-//   }
-// }
+  img {
+    height: 80px;
+  }
+}
 
 .site-nav {
   position: absolute;
