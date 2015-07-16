@@ -39,7 +39,7 @@
   @include media-query($bp-mobile) {
     position: absolute;
     right: 30px;
-    background-color: $back-color;
+    background-color: white;
     border: 1px solid black;
     border-radius: 5px;
     text-align: right;
