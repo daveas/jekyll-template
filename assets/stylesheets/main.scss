@@ -38,7 +38,7 @@ $bp-desktop-hd: 1200px;
 }
 
 // Basic Imports
-// @import "base";
+@import "base";
 // @import "layout";
 // @import "header";
 // @import "footer";
@@ -46,7 +46,7 @@ $bp-desktop-hd: 1200px;
 
 // Skeleton Imports
 @import "_skeleton/_styles.scss"; // Required
-@import "_skeleton/_grid.scss";
+// @import "_skeleton/_grid.scss";
 // @import "_skeleton/_forms.scss";
 // @import "_skeleton/_buttons.scss";
 
