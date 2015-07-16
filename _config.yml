@@ -5,7 +5,7 @@ company: Seemingly Creative
 email: hi@daveaseeman.com
 description: A Versatile Jekyll Template created by @daveaseeman
 url: 'http://rig.daveaseeman.com'
-icon: /assets/images/icon.png
+icon: https://assets-cdn.github.com/images/icons/emoji/unicode/1f30a.png
 images: /assets/images/
 docs: /assets/docs/
 handle: daveaseeman
