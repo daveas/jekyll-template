@@ -1,42 +1,20 @@
 <footer class="site-footer">
   <div class="inline-list">
     <ul>
-      <!-- Twitter -->
+      <!-- Social -->
+      {% assign social = site.data.socials %}
+      {% for social in socials %}
+      {% if social.show == true %}
       <li>
-        <a href="https://twitter.com/{{ site.handle }}">
+        <a href="http://{{social.site}">
           <span class="fa-stack fa-lg">
             <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            <i class="fa fa-{{social.icon}} fa-stack-1x fa-inverse"></i>
           </span>
         </a>
       </li>
-      <!-- Instagram -->
-      <li>
-        <a href="https://instagram.com/{{ site.handle }}">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      <!-- Linkedin -->
-      <li>
-        <a href="https://linkedin.com/in/{{ site.handle }}">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      <!-- GitHub -->
-      <li>
-        <a href="https://github.com/{{ site.handle }}">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-git fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
+      {% endif %}
+      {% endfor %}
       <!-- RSS -->
       <li>
         <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
@@ -51,9 +29,8 @@
   <!-- Meta -->
   <div class="footer-meta">
     <ul>
-      <li><small><i class="fa fa-copyright"></i> 2014-{{ site.time | date: '%Y' }} {{ site.author }}</small></li>
-      <li><small>Site Created by <a href="http://github.com/daveas/daveas.github.io">{{ site.company }}</a></small></li>
-      <li><small><a href="mailto:{{site.email}}?Subject=Hi"><i class="fa fa-envelope"></i> me</a></small></li>
+      <li><i class="fa fa-copyright"></i> 2014-{{ site.time | date: '%Y' }} {{ site.owner }}</li>
+      <!-- add your footer information here between <li></li> tags -->
     </ul>
   </div>
 </footer>
