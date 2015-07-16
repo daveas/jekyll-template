@@ -132,6 +132,16 @@ hr {
   margin: 0 auto;
 }
 
+@mixin plain-link($set-link-color) {
+ a {
+  color: $set-link-color;
+  text-decoration: none;
+  &:visited {
+   color: $set-link-color;
+  }
+ }
+}
+
 .inline-list {
    ul {
      margin: 0;
