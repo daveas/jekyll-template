@@ -10,7 +10,7 @@
   img {
     height: 80px;
   }
-  @include media-query($on-palm) {
+  @include media-query($bp-mobile) {
     max-width: 70%;
   }
 }
@@ -19,8 +19,8 @@
   vertical-align: center;
   float: right;
   font-size: 20px;
-  margin-top:20px;
-  margin-bottom:20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   max-width: 70%;
 
   .menu-icon {
@@ -36,7 +36,7 @@
     }
   }
 
-  @include media-query($on-palm) {
+  @include media-query($bp-mobile) {
     position: absolute;
     right: 30px;
     background-color: $back-color;
