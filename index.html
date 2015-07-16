@@ -6,13 +6,26 @@ layout: default
 
   <h1 class="page-heading">{{ site.title }}</h1>
 
-<div class="post-list">
+  <h1>Recent Post</h1>
+  <div class="post-list">
     {% assign posts = site.posts %}
     {% for post in posts limit:1 %}
       <div>
         <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         {{ post.excerpt }}
+      </div>
+    {% endfor %}
+  </div>
+  
+  <h1>Recent Project</h1>
+  <div class="post-list">
+    {% assign projects = site.projects %}
+    {% for project in projects limit:1 %}
+      <div>
+        <h2><a class="post-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h2>
+        <span class="post-meta">{{ project.date | date: "%b %-d, %Y" }}</span>
+        {{ project.excerpt }}
       </div>
     {% endfor %}
   </div>
