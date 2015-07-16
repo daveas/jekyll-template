@@ -40,7 +40,7 @@ $bp-desktop-hd: 1200px;
 // Basic Imports
 @import "base";
 @import "layout";
-// @import "header";
+@import "header";
 @import "footer";
 @import "syntax";
 
