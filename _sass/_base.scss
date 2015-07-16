@@ -43,8 +43,8 @@ dd,
 ol,
 ul,
 figure {
-  @extend vertical-rhythm;
-  @extend extend-border-box;
+  @extend %vertical-rhythm;
+  @extend %extend-border-box;
 }
 
 body {
@@ -54,7 +54,7 @@ body {
   line-height: $line-height;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  @extend vertical-rhythm;
+  @extend %vertical-rhythm;
 }
 
 h1,
@@ -102,7 +102,7 @@ nav,
 section,
 summary {
   display: block; // Correct `block` display not defined for any HTML5 element in IE 8/9, `details` or `summary` in IE 10/11 and Firefox, and `main` in IE 11.
-  @extend extend-border-box;
+  @extend %extend-border-box;
 }
 
 audio,
@@ -305,7 +305,7 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] { // It's recommended that you don't attempt to style these elements. Firefox's implementation doesn't respect box-sizing, padding, or width.
-  @extend extend-border-box; // Address box sizing set to `content-box` in IE 8/9/10.
+  @extend %extend-border-box; // Address box sizing set to `content-box` in IE 8/9/10.
   padding: 0; // Remove excess padding in IE 8/9/10.
 }
 
