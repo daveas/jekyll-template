@@ -48,7 +48,7 @@ $bp-desktop-hd: 1200px;
 @import "_skeleton/_styles.scss"; // Required
 @import "_skeleton/_grid.scss";
 @import "_skeleton/_forms.scss";
-// @import "_skeleton/_buttons.scss";
+@import "_skeleton/_buttons.scss";
 
 // Animation Imports
 @import "_animate/_properties.scss"; // Required
