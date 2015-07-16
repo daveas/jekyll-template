@@ -9,7 +9,8 @@ permalink: /posts/
   <h1 class="page-heading">Posts</h1>
 
   <div class="post-list">
-    {% for post in site.posts %}
+    {% assign posts = site.posts %}
+    {% for post in posts %}
       <div>
         <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
