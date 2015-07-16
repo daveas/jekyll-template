@@ -132,12 +132,13 @@ hr {
   margin: 0 auto;
 }
 
-@mixin plain-link($set-link-color) {
+@mixin plain-link($link) {
  a {
-  color: $set-link-color;
+  color: $link;
   text-decoration: none;
   &:visited {
-   color: $set-link-color;
+   color: $link;
+   text-decoration: none;
   }
  }
 }
