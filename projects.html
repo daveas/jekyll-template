@@ -1,0 +1,22 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Projects</h1>
+
+  <div class="post-list">
+    {% assign projects = site.projects %}
+    {% for project in projects %}
+      <div>
+        <h2><a class="post-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h2>
+        <span class="post-meta">{{ project.date | date: "%b %-d, %Y" }}</span>
+        {{ project.excerpt }}
+      </div>
+    {% endfor %}
+  </div>
+  
+</div>
