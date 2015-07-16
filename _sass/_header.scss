@@ -11,6 +11,8 @@
   line-height: $spacing-unit*3;
   max-width: 30%;
   float: left;
+  @include plain-link($text-color);
+  
     img {
       height: 80px;
     }
