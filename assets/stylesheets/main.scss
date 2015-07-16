@@ -42,7 +42,7 @@ $bp-desktop-hd: 1200px;
 @import "layout";
 @import "header";
 @import "footer";
-// @import "syntax";
+@import "syntax";
 
 // Skeleton Imports
 @import "_skeleton/_styles.scss"; // Required
