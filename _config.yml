@@ -6,12 +6,11 @@ company: Seemingly Creative
 email: hi@daveaseeman.com
 description: A Versatile Jekyll Template created by @daveaseeman
 url: 'http://rig.daveaseeman.com'
-icon: http://upload.wikimedia.org/wikipedia/commons/thumb/4/48/BLANK_ICON.png/120px-BLANK_ICON.png
+icon:
 images: /assets/images/
 docs: /assets/docs/
-handle: daveaseeman
 analytics: UA-51898808-7
-disqus: replace
+disqus:
 
 # Build
 markdown: kramdown
