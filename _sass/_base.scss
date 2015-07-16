@@ -11,7 +11,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: $head-font-family; // Set default font family.
+  font-family: $body-font-family; // Set default font family.
   -ms-text-size-adjust: 100%; // Prevent iOS and IE text size adjust after device orientation change, without disabling user zoom.
   -webkit-text-size-adjust: 100%; // Prevent iOS and IE text size adjust after device orientation change, without disabling user zoom.
 }
@@ -65,6 +65,7 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 2rem;
+  font-family: $head-font-family;
   font-weight: $head-font-weight;
 }
 
