@@ -3,10 +3,12 @@
 */
 
 .site-footer {
-  margin: 0 auto;
-  text-align: center;
+  @extend %center;
 }
 
 .footer-meta {
   color: $soft-color;
+  ul {
+    list-style-type: none;
+  }
 }
