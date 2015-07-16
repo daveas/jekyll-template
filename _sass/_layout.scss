@@ -7,7 +7,7 @@
 }
 
 .page-heading {
-    // font-size: 20px;
+    @extend %center;
 }
 
 .post-list {
